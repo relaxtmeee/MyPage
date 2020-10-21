@@ -1,0 +1,219 @@
+@media(max-width: 1200px){
+    .button,
+    .button1,
+    .button2{
+        padding: 10px 30px;
+    }
+    .contactsWithMe__blockContactsTel{
+        margin-left: 25px;
+    }
+    .contactsWithMe__blockContactsMail{
+        margin-left: 25px;
+    }
+}
+
+@media(max-width: 980px){
+    .button,
+    .button1,
+    .button2{
+        padding: 10px 20px;
+    }
+    .button__text, 
+    .button__text1, 
+    .button__text2{
+        padding: 10px 10px;
+    }
+    .contactsWithMe__blockContactsTel{
+        align-items: baseline;
+        margin-left: 0;
+    }
+    .contactsWithMe__blockContactsTelTel{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+    .contactsWithMe__blockContactsTelTelTitle{
+        margin: 0;
+    }
+    .contactsWithMe__blockContactsTelTelTitle h3{
+        margin: 10px 0;
+    }
+    
+    .contactsWithMe__blockContactsMail{
+        align-items: baseline;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .contactsWithMe__blockContactsMailMail{
+        flex-direction: column;
+        align-items: flex-start; 
+        margin-left: 20px;
+    }
+    .contactsWithMe__blockContactsMailMailTitle{
+        margin: 0;
+    }
+    .contactsWithMe__blockContactsMailMailTitle h3{
+        margin: 10px 0;
+    }
+    .contacts__block{
+        max-width: 80%;
+    }
+    .contactsWithMe__blockForm h2{
+        margin: 10px 0 20px 0;
+    }
+}
+@media(max-width: 868px){
+    .button__text, 
+    .button__text1, 
+    .button__text2 {
+        letter-spacing: 2px;
+        padding: 5px 5px;
+    }
+    /* .button, 
+    .button1, 
+    .button2{
+        font-size: 25px;
+    } */
+
+}
+@media(max-width: 768px){
+    nav {
+        flex-direction: column;
+        width: 60%;
+        padding: 25px 10px;
+    }
+    .button, 
+    .button1, 
+    .button2 {
+        padding: 25px 30px;
+    }
+    .button::before, 
+    .button::after, 
+    .button2::before, 
+    .button2::after,
+    .button1::before,
+    .button1::after  {
+        top: 40px;
+    }
+    .button:before{
+        animation: rotate 15s infinite linear;
+        left: 40%;
+    }
+    .button:after{
+        left: 55%;
+        animation: backRotate 15s infinite linear;
+    }
+    .button2::before{
+        animation: rotate 25s infinite linear;
+        left: 40%;
+    }
+    .button2::after{
+        left: 55%;
+        animation: backRotate 25s infinite linear;
+    }
+    .button:hover:before,
+    .button2:hover:before{
+        left: -1%;
+        opacity: 0; 
+    }
+    .button:hover:after,
+    .button2:hover:after{
+        left: 100%;
+        opacity: 0; 
+    }
+    .button__text::before, 
+    .button__text::after, 
+    .button__text1::before, 
+    .button__text1::after, 
+    .button__text2::before, 
+    .button__text2::after {
+        z-index: 2;
+    }
+    .button__text, 
+    .button__text1, 
+    .button__text2 {
+        padding: 10px 15px;
+        letter-spacing: 5px;
+    }
+}
+@media(max-width: 691px){
+    .project1 {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .project1__demo {
+        width: 80%;
+    }
+    .project__discription{
+        width: 85%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .project1__title {
+        margin: 30px 0 30px 0;
+    }
+    .project1__discriptionDiscription {
+        margin: 0 0 30px 0;
+    }
+
+
+    .project2 {
+        height: auto;
+        flex-direction: column;
+    }
+    .project2__demo {
+        width: 80%;
+    }
+    .project2__discription{
+        width: 85%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+    }
+    .project2__title {
+        margin: 30px 0 30px 0;
+    }
+    .project2__discriptionDiscription {
+        margin: 0 0 30px 0;
+    }
+
+    .contactsWithMe {
+        flex-direction: column-reverse;
+    }
+    .contactsWithMe__blockForm {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .contactsWithMe__blockContacts{
+        width: 100%;
+    }
+    .contactsWithMe__blockContactsTelTel {
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .contactsWithMe__blockContactsTelTelTitle{
+        margin-right: 15px;
+    }
+
+    .contactsWithMe__blockContactsMailMail {
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .contactsWithMe__blockContactsMailMailTitle{
+        margin-right: 15px;
+    }
+    .contacts__block {
+        max-width: 100%;
+        padding: 40px 20px;
+    }
+    .contacts__myMoscow {
+        width: 70%;
+    }
+    .contacts__contacts {
+        left: 0;
+    
+    }
+}

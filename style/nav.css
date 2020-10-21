@@ -1,0 +1,245 @@
+.navContainer{
+    padding: 20px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgb(79, 93, 82);
+    overflow: hidden;
+}
+nav{
+    background: rgb(43, 62, 70);
+    color: rgb(231, 255, 237);
+    display: flex;
+    border: 5px solid rgb(79, 93, 82);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    transform: translate(0px, 120%); 
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+nav.active{
+    transform: translate(0px, 0px); 
+    opacity: 1;
+}
+
+.button,
+.button1,
+.button2{
+    text-transform: uppercase;
+    font-size: 35px;
+    padding: 10px 60px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    transform: translate(0px, 120%); 
+    opacity: 0;
+    transition: all 1s ease 0.4s;
+    
+}
+.button.active,
+.button1.active,
+.button2.active{
+    transform: translate(0px, 0px); 
+    opacity: 1; 
+}
+
+
+.button:before,
+.button:after,
+.button2:before,
+.button2:after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(79, 93, 82);
+    top: 30px;
+    left: 50%;
+    z-index: 1;
+    transition: all 0.8s ease 0s;
+    margin: 0px 0px 0px -40px;
+}
+.button:before{
+    animation: rotate 20s infinite linear;
+}
+.button:after{
+    animation: rotate 25s infinite linear;
+}
+.button1::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(79, 93, 82);
+    top: 30px;
+    left: 55%;
+    z-index: 1;
+    transition: all 0.8s ease 0s;
+    margin: 0px 0px 0px -40px;
+    animation: backRotate 20s infinite linear;
+}
+.button1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(79, 93, 82);
+    top: 30px;
+    left: 40%;
+    z-index: 1;
+    transition: all 0.8s ease 0s;
+    margin: 0px 0px 0px -40px;
+    animation: rotate 20s infinite linear;
+}
+.button2:before{
+    animation: backRotate 20s infinite linear;
+}
+.button2:after{
+    animation: backRotate 25s infinite linear;
+}
+.button__text,
+.button__text1,
+.button__text2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    transition: all 1s ease 0s;
+    top: 0;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+.button:hover:before,
+.button:hover:after{
+    left: -1%;
+    opacity: 0; 
+}
+.button1:hover:before{
+    left: -1%;
+    opacity: 0; 
+}
+.button1:hover:after{
+    left: 100%;
+    opacity: 0; 
+}
+.button2:hover:before,
+.button2:hover:after{
+    left: 100%;
+    opacity: 0; 
+}
+.button__text:before,
+.button__text:after,
+.button__text1:before,
+.button__text1:after,
+.button__text2:before,
+.button__text2:after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(65, 77, 66);
+    transition: all 0.8s ease 0s;
+}
+.button__text:before{
+    left: 0;    
+}
+.button__text:after{
+    right: 0;
+    z-index: 2;
+}
+.button__text span{
+    position: relative;
+    z-index: 3;
+}
+
+.button:hover .button__text,
+.button1:hover .button__text1,
+.button2:hover .button__text2{
+    top: -10px;
+    color: #fff;
+    transition: all 0.5s ease 0.2s;
+    box-shadow: 0 5px 8px 0 #0c5b52;
+}
+.button:hover .button__text:before,
+.button:hover .button__text:after,
+.button1:hover .button__text1:before,
+.button1:hover .button__text1:after,
+.button2:hover .button__text2:before,
+.button2:hover .button__text2:after{
+    background-color: #18b5a4;
+}
+.button:hover .button__text:before,
+.button1:hover .button__text1:before,
+.button2:hover .button2__text:before{
+    width: 100%;
+}
+
+.button:active .button__text,
+.button1:active .button__text1,
+.button2:active .button__text2{
+    top: -7px;
+    transition: all 0.1s ease 0s;
+    box-shadow: 0 2px 0 0 #0c5b52;
+}
+
+.button__text1:before{
+
+    left: 0;  
+    z-index: 2;  
+}
+.button__text1:after{
+    right: 0;
+    z-index: 2;
+}
+.button__text1 span{
+    position: relative;
+    z-index: 3;
+}
+
+
+.button__text2:before{
+    left: 0;  
+    z-index: 2;  
+}
+.button__text2:after{
+    right: 0;
+}
+.button__text2 span{
+    position: relative;
+    z-index: 3;
+}
+
+.button a,
+.button1 a,
+.button2 a{
+    color: rgb(113, 169, 158);
+    /* background: rgb(65, 77, 66); */
+    text-decoration: none;
+    padding: 15px 25px;
+    /* border: 3px solid rgb(53, 60, 54); */
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);    
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes backRotate{
+    0%{
+        transform: rotate(0deg);    
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}

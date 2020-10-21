@@ -1,0 +1,121 @@
+@import url(nav.css);
+@import url(wrapper.css);
+@import url(article.css);
+@import url(footer.css);
+@import url(contactsWithMe.css);
+@import url(media.css);
+
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    color: rgb(113, 169, 158);
+    border: 2px solid rgb(113 169 158);
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(28, 33, 45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    outline: none;
+}
+.menuBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    right: 40px;
+    bottom: 40px;
+}
+.menu-btn{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(43, 62, 70);;
+    position: relative;
+    z-index: 999;
+}
+.menu-btn span,
+.menu-btn span:after,
+.menu-btn span:before{
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(113, 169, 158);
+    transition: all 0.2s ease 0s;
+}
+.menu-btn span:after,
+.menu-btn span:before{
+    content: '';
+    display: block;
+    transition: 0.5s;
+}
+.menu-btn span:before{
+    transform: translateY(-5px);
+}
+.menu-btn span:after{
+    transform: translateY(5px);
+}
+.menu-btn.activeting span{
+    height: 0;
+}
+.menu-btn.activeting span:before{
+    transform: rotate(45deg);
+}
+.menu-btn.activeting span:after{
+    transform: rotate(-45deg);
+}
+
+.menuBlock__block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.menuBlock__block .menuBlock__menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 20px);
+    z-index: 0;
+}
+.menuBlock__block .menuBlock__menu a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background: white;
+}
+
+.menuBlock__menu a:nth-child(1){
+    transition-delay: 0.1s;
+}
+.menuBlock__menu a:nth-child(2){
+    transition-delay: 0.2s;
+}
+.menuBlock__menu a:nth-child(3){
+    transition-delay: 0.3s;
+}
+
+
+.activate a:nth-child(1){
+    transform: translate(-130%, 30%);
+}
+.activate a:nth-child(2){
+    transform: translate(-100%,-90%);
+}
+.activate a:nth-child(3){
+    transform: translate(10%,-130%);
+}
