@@ -82,6 +82,11 @@
         width: 60%;
         padding: 25px 10px;
     }
+
+    .navContainer{
+        height: auto;
+    }
+
     .button, 
     .button1, 
     .button2 {
@@ -142,7 +147,7 @@
         flex-direction: column-reverse;
     }
     .project1__demo {
-        width: 80%;
+        width: 90%;
     }
     .project__discription{
         width: 85%;
@@ -163,7 +168,7 @@
         flex-direction: column;
     }
     .project2__demo {
-        width: 80%;
+        width: 90%;
     }
     .project2__discription{
         width: 85%;
@@ -215,5 +220,62 @@
     .contacts__contacts {
         left: 0;
     
+    }
+}
+
+@media(max-width: 465px){
+    nav {
+    width: 85%;
+    }
+    .project1__demo {
+        width:100%;
+    }
+    .project2__demo {
+        width: 100%;
+    }
+    .contactsWithMe__blockForm h2{
+        font-size: 1.7rem;
+    }
+    .contactsWithMe__blockForm form button {
+        font-size: 1.3rem;
+    }
+    .contactsWithMe__blockContacts h3 {
+        font-size: 1.5rem;
+    }
+    .contactsWithMe__blockContactsTelTelDiscription {
+        font-size: 1.2rem;
+    }
+    .contactsWithMe__blockContactsMailMailDiscription {
+        font-size: 1.2rem;
+    }
+    .contactsWithMe__blockContactsTelTel {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contactsWithMe__blockContactsMailMail {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contacts__contacts {
+        width: auto;
+    }
+    .contacts__block {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 40px 10px;
+    }
+    .contacts__myMoscowDiscription {
+        width: 100%;
+        text-align: justify;
+    }
+    .contacts__myMoscow{
+        margin-bottom: 20px;
+    }
+    .contacts__myMoscow {
+        width: 100%;
+    }
+
+    .contacts__blockContacts {
+        margin-bottom: 10px;
     }
 }

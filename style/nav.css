@@ -21,7 +21,7 @@ nav{
     opacity: 0;
     transition: all 1s ease 0s;
 }
-nav.active{
+.navContainer.active nav{
     transform: translate(0px, 0px); 
     opacity: 1;
 }
@@ -42,9 +42,9 @@ nav.active{
     transition: all 1s ease 0.4s;
     
 }
-.button.active,
-.button1.active,
-.button2.active{
+.navContainer.active nav .button,
+.navContainer.active nav .button1,
+.navContainer.active nav .button2{
     transform: translate(0px, 0px); 
     opacity: 1; 
 }
